@@ -29,6 +29,12 @@ print(f"u. beta: {beta:.2f}")
 print(f"u. gamma: {gamma:.2f}")
 print(f"polomer vpisanej kruznice: {r:.2f}")
 print(f"polomer opisanej kruznice: {R:.2f}")
+if a==b and c < b and c < a or b==c and a < b and a < c or a==c and b < c and b < a:
+    print("trojuholnik je rovnorameny")
+elif a==b and b==c and a==c:
+    print("trojuholnik je rovnostrany")
+else:
+    print("trojuholnik je roznostrany")
 
 
 
