@@ -36,9 +36,6 @@ def checkit(x,y):
                     return False
     return True
 
-def Drawqueens():
-    pass
-
 def queens(n):
     global chessboard
     global counter
@@ -62,6 +59,7 @@ def Drawqueens():
         for stlpec in range(8):
             if chessboard[riadok][stlpec] == 1:
                 obrazok.paste(dama,(stlpec * 50 + 5, riadok * 50 + 5), dama)
+    obrazok.save("riesenie" + str(counter) + ".png")
     obrazok.show()
 
 #tgransparent queen
