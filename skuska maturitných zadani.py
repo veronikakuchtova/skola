@@ -80,36 +80,36 @@
 # subor.close()
 
 #7
-import random
-pocet_studentov = int(input('Pocet studentov: '))
-pocet_otazok = int(input('Pocet otazok: '))
-
-while pocet_otazok < pocet_studentov:
-    print('Chyba: pocet otazok je mensi ako pocet studentov')
-    pocet_otazok = int(input('pocet otazok: '))
-
-studenti = []
-otazky = []
-for i in range(pocet_studentov):
-    studenti.append(i + 1)
-for i in range(pocet_otazok):
-    otazky.append(i + 1)
-
-parne_otazky = otazky[1::2]
-neparne_otazky = otazky[::2]
-random.shuffle(parne_otazky)
-random.shuffle(neparne_otazky)
-otazky = []
-for i in range(len(parne_otazky)):
-    otazky = otazky + [parne_otazky[i], neparne_otazky[i]]
-if len(neparne_otazky) > len(parne_otazky):
-    otazky.append(neparne_otazky[-1])
-
-random.shuffle(studenti)
-print('Poradie odpovedajúcich a ich číslo otázky:')
-for i in range(pocet_studentov):
-    oznam = '{}. student: {}, otazka: {}'.format(i+1, studenti[i], otazky[i])
-    print(oznam)
+# import random
+# pocet_studentov = int(input('Pocet studentov: '))
+# pocet_otazok = int(input('Pocet otazok: '))
+#
+# while pocet_otazok < pocet_studentov:
+#     print('Chyba: pocet otazok je mensi ako pocet studentov')
+#     pocet_otazok = int(input('pocet otazok: '))
+#
+# studenti = []
+# otazky = []
+# for i in range(pocet_studentov):
+#     studenti.append(i + 1)
+# for i in range(pocet_otazok):
+#     otazky.append(i + 1)
+#
+# parne_otazky = otazky[1::2]
+# neparne_otazky = otazky[::2]
+# random.shuffle(parne_otazky)
+# random.shuffle(neparne_otazky)
+# otazky = []
+# for i in range(len(parne_otazky)):
+#     otazky = otazky + [parne_otazky[i], neparne_otazky[i]]
+# if len(neparne_otazky) > len(parne_otazky):
+#     otazky.append(neparne_otazky[-1])
+#
+# random.shuffle(studenti)
+# print('Poradie odpovedajúcich a ich číslo otázky:')
+# for i in range(pocet_studentov):
+#     oznam = '{}. student: {}, otazka: {}'.format(i+1, studenti[i], otazky[i])
+#     print(oznam)
 
 
 
