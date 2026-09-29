@@ -6,12 +6,13 @@ subor.readline()
 pocet = 0
 
 for riadok in subor:
-    udaje = riadok.split(",")
-    cislo = udaje[5]
-    if cislo[0] in "123456789":
-        prva_cislica = cislo[0]
-        pocty[prva_cislica] += 1
-        pocet += 1
+    if "China" in riadok:
+        udaje = riadok.split(",")
+        cislo = udaje[5]
+        if cislo[0] in "123456789":
+            prva_cislica = cislo[0]
+            pocty[prva_cislica] += 1
+            pocet += 1
 subor.close()
 
 for cislica in pocty:
