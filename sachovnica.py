@@ -60,7 +60,6 @@ def Drawqueens():
             if chessboard[riadok][stlpec] == 1:
                 obrazok.paste(dama,(stlpec * 50 + 5, riadok * 50 + 5), dama)
     obrazok.save("riesenie" + str(counter) + ".png")
-    obrazok.show()
 
 #tgransparent queen
 create_chessboard()
