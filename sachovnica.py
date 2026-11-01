@@ -1,4 +1,3 @@
-# zoznam v zozname na sachovnicu = kniznica je na to NUMPY -> silna kniznica na matematiku
 from PIL import Image, ImageDraw
 chessboard = []
 counter = 0
@@ -60,7 +59,6 @@ def Drawqueens():
             if chessboard[riadok][stlpec] == 1:
                 obrazok.paste(dama,(stlpec * 50 + 5, riadok * 50 + 5), dama)
     obrazok.save("riesenie" + str(counter) + ".png")
-    obrazok.show()
 
 #tgransparent queen
 create_chessboard()
